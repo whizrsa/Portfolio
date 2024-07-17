@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Elvis Chimuse Portoflio</title>
+    <script src="https://kit.fontawesome.com/a3b3900585.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Elvis.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portoflio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Elvis</span> <br>Chimuse From South Africa</h1>
+            </div>
+
+        </div>
+    </div>
+<!-- -------------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm Elvis Chimuse, a final-year BSc IT student with a passion for solving complex problems through innovative software solutions. 
+                        Over the years, I've honed my skills in a variety of programming languages and technologies, including CSS, HTML, PHP, C#, and JavaScript.
+                        As a dedicated developer, I thrive on creating efficient, user-friendly web applications and systems. 
+                        My journey in software development has equipped me with a strong foundation in both front-end and back-end technologies, allowing me to build seamless and dynamic web experiences.
+                        I'm excited to apply my skills and knowledge to new challenges and opportunities in the tech industry.
+                        Whether it's designing sleek, responsive web pages or developing robust server-side logic, I'm always eager to push the boundaries of what's possible with code. 
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <p>HTML</p>
+                        <div class="s-container">
+                        <div class="skills html">85%</div>
+                        </div>
+
+                        <p>CSS</p>
+                        <div class="s-container">
+                        <div class="skills css">75%</div>
+                        </div>
+
+                        <p>JavaScript</p>
+                        <div class="s-container">
+                        <div class="skills js">40%</div>
+                        </div>
+
+                        <p>PHP</p>
+                        <div class="s-container">
+                        <div class="skills php">67%</div>
+                        </div>
+
+                        <p>C#</p>
+                        <div class="s-container">
+                        <div class="skills C-sharp">66%</div>
+                        </div>
+
+                        <p>SQL</p>
+                        <div class="s-container">
+                        <div class="skills sql">78%</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Completing BSc IT degree</li>
+                            <li><span>2024</span><br>Azure</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>BSc IT Software Engineer at Eduvos</li>
+                            <li><span>Web Development</span><br>Wep App Development</li>
+                            <li><span>.Net Developer</span><br>App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------sevices----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I can can create fully functional and user responsive websites. I am familiar with google analytics to keep track of traffic.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>I am familiar with using software such as figma and canva. I use them on a frequent basis when coming up with a design for a website.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>.Net Developer</h2>
+                    <p>I can create highly advanced C# programs that can connect and retrieve from a database. I have good knowledge of OOB, Data Structures, Inheritance and classes.
+                        I am also familiar with frameworks such as WPF and Winforms.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>E commerce Website</h3>
+                        <p>The website makes use of HTML, JS, PHP and CSS.The PHP is used for the backend operations such as
+                            inserting into the database, retrieving information from the database as well ass updating information in the database.
+                            The website is hosted on a free hosting platform.
+                        </p>
+                        <a href="https://github.com/whizrsa/AquasCatering"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Math Game</h3>
+                        <p>The console App is created using advanced C# programs. This games makes use of MVC, OOB and data structures.
+                        </p>
+                        <a href="https://github.com/whizrsa/Math-Game"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Bank App</h3>
+                        <p>The console bank app makes use of advanced concepts such as interfaces, OOB, encrption and decryption. The program assumes you are loging in.
+                        </p>
+                        <a href="https://github.com/whizrsa/Bank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>elvischimuse@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>067-258-8270</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/whizrsa"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/elvis-chimuse-52b70b24a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Elvis-Chimuse_Curriculum Vitae.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Elvis. Made with <i class="fa-solid fa-heart"></i> by Elvis Chimuse</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbymsm4r-lP6G5_mJvPG8jxxKcN_6TKnqpYMH2CLr1nVQ4eJrFLcq_gLYD5sK2NClNZrvg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
