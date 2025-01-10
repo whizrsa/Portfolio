@@ -16,10 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bgEl.jpg);
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: right;
+
 }
 
 .container{
@@ -65,9 +62,17 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+@keyframes headerTxt {
+    from {color: white;}
+    to {color: rebeccapurple;}
+}
+
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
+    text-align: center;
+    animation-name: headerTxt;
+    animation-duration: 2s;
 }
 
 .header-text h1{
@@ -377,73 +382,13 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-
-@media only screen and (max-width:  1024px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 110%;
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width:  1250px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 400px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 100%;
-        font-size: 18px;
-    }
-
-    .header-text h1{
-        font-size: 45px;
-    }
-}
-
-@media only screen and (max-width:  900px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 90%;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width:  800px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 90%;
-        font-size: 14px;
-    }
-}
-
 @media only screen and (max-width:  600px){
     #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
         height: 100vh;
     }
 
     .header-text{
-        margin-top: 110%;
+        margin-top: 20%;
         font-size: 16px;
     }
 
@@ -510,51 +455,14 @@ nav .fa-solid{
     }
 }
 
-
-
-@media only screen and (max-width:  450px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 136%;
-        font-size: 14px;
+@media only screen and (min-width:  1260px){
+    .work-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        margin-top: 50px;
     }
 }
-
-@media only screen and (max-height:  600px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 30%;
-        font-size: 14px;
-    }
-
-    .header-text h1{
-        font-size: 35px;
-    }
-}
-
-@media only screen and (max-width:  344px){
-    #header{
-        background-image: url(images/bgEl.jpg);
-        background-size: 300px;
-        background-position: center;
-    }
-
-    .header-text{
-        margin-top: 160%;
-        font-size: 14px;
-    }
-}
-
 
 
 #msg{
