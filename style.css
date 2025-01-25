@@ -461,9 +461,17 @@ nav .fa-solid{
 @media  only screen and (max-width: 900px){
     .work-list {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
         margin-top: 50px;
+    }
+
+    .layer, p {
+        font-size: 10px;
+    }
+
+    .layer, a {
+        font-size: 12px;
     }
 }
 
