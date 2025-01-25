@@ -455,6 +455,10 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+
+    .work-list, .work {
+        height: 8vh;
+    }
 }
 
 @media only screen and (min-width:  1260px){
