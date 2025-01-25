@@ -459,8 +459,11 @@ nav .fa-solid{
 }
 
 @media  only screen and (max-width: 900px){
-    .work-list, .work {
-        height: 36vh;
+    .work-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        margin-top: 50px;
     }
 }
 
