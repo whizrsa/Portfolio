@@ -458,7 +458,7 @@ nav .fa-solid{
 
 }
 
-@media  only screen and (max-width: 800px){
+@media  only screen and (max-width: 900px){
     .work-list, .work {
         height: 36vh;
     }
