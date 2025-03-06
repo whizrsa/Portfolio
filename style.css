@@ -491,6 +491,13 @@ nav .fa-solid{
     }
 }
 
+@media  only screen and (max-width: 1080){
+
+    .header-text p{
+        font-size: 24px;
+    }
+}
+
 
 #msg{
     color: #61b752;
