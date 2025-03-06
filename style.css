@@ -465,9 +465,8 @@ nav .fa-solid{
         height: 80vh;
     }
 
-    .header-text{
-        margin-top: 20%;
-        font-size: 20px;
+    .header-text p{
+        font-size: 22px;
     }
 
     .work-list {
