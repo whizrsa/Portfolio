@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Elvis Chimuse Portoflio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="https://kit.fontawesome.com/a3b3900585.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/Elvis_New_Profile-removebg-preview.png" alt="">
+                    <img src="images/smileElvis-removebg-preview.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -55,41 +56,55 @@
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
-                        <p>HTML</p>
-                        <div class="s-container">
-                        <div class="skills html">85%</div>
-                        </div>
-
-                        <p>CSS</p>
-                        <div class="s-container">
-                        <div class="skills css">75%</div>
-                        </div>
-
-                        <p>JavaScript</p>
-                        <div class="s-container">
-                        <div class="skills js">40%</div>
-                        </div>
-
-                        <p>PHP</p>
-                        <div class="s-container">
-                        <div class="skills php">67%</div>
-                        </div>
-
-                        <p>C#</p>
-                        <div class="s-container">
-                        <div class="skills C-sharp">66%</div>
-                        </div>
-
-                        <p>SQL</p>
-                        <div class="s-container">
-                        <div class="skills sql">78%</div>
+                        <div class="skills-container">
+                            <div class="skill">
+                                <i class="fa-brands fa-html5 html-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill html">90%</div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <i class="fa-brands fa-css3-alt css-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill css">80%</div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <i class="fa-brands fa-js-square js-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill js">55%</div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <i class="fa-brands fa-php php-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill php">65%</div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <i class="devicon-csharp-plain C-sharp-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill C-sharp">70%</div>
+                                </div>
+                            </div>
+                    
+                            <div class="skill">
+                                <i class="fa-solid fa-database sql-icon"></i>
+                                <div class="skill-bar">
+                                    <div class="skill-fill sql">79%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
 
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Freelancer</span><br>Developed a fully functional E commerce website for a small business that allowed customers to make purchases online.</li>
-                            <li><span>2024</span><br>Azure</li>
                         </ul>
                     </div>
 
@@ -130,28 +145,29 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Developer</h2>
-                    <p>I can can create fully functional and user responsive websites. I am familiar with google analytics to keep track of traffic.
-                    </p>
-                
+                    <h2>Web Development</h2>
+                    <p>I specialize in creating fully functional, responsive, and user-friendly websites. With expertise in front-end and back-end technologies, I ensure seamless performance and engaging user experiences. Additionally, I leverage Google Analytics to monitor website traffic and optimize performance.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>Web Design</h2>
-                    <p>I am familiar with using software such as figma and canva. I use them on a frequent basis when coming up with a design for a website.
-                    </p>
+                    <p>With proficiency in design tools such as Figma and Canva, I craft visually appealing and intuitive website layouts. My approach focuses on user experience (UX) and modern aesthetics to create designs that enhance engagement and usability.</p>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>.Net Developer</h2>
-                    <p>I can create highly advanced C# programs that can connect and retrieve from a database. I have good knowledge of OOB, Data Structures, Inheritance and classes.
-                        I am also familiar with frameworks such as WPF and Winforms.
-                    </p>
-                    
+                    <h2>.NET Development</h2>
+                    <p>As a skilled C# developer, I build advanced applications that integrate seamlessly with databases. My expertise includes object-oriented programming (OOP), data structures, inheritance, and class-based architectures. I am also experienced in working with frameworks such as WPF and WinForms to develop dynamic and scalable software solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cybersecurity</h2>
+                    <p>I have a strong understanding of cybersecurity principles, including threat detection, network security, and data protection. I implement best security practices to safeguard applications from vulnerabilities, ensuring secure authentication, encryption, and compliance with industry standards.</p>
                 </div>
             </div>
         </div>
     </div>
+    
+    
 
     <!-------------------portfolio-------------->
     <div id="portfolio">
@@ -205,7 +221,7 @@
                         <a href="https://github.com/whizrsa"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/elvis-chimuse-52b70b24a/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="images/Elvis_Chimuse-CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/Elvis-Chimuse_ATS_CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
