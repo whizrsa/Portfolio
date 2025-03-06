@@ -15,7 +15,7 @@ body{
 
 #header{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 
 }
 
@@ -502,9 +502,58 @@ nav .fa-solid{
     color: white;
   }
   
-  .html {width: 85%; background-color: #04AA6D;}
-  .css {width: 75%; background-color: #2196F3;}
-  .js {width: 40%; background-color: #f44336;}
-  .php {width: 60%; background-color: #808080;}
-  .C-sharp {width: 66%; background-color: #ff004f;}
-  .sql {width: 78%; background-color: #a70d02;}
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill i {
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+/* Skill Colors */
+.html {width: 90%; background-color: #E34F26;}
+.css {width: 80%; background-color: #1572B6;}
+.js {width: 55%; background-color: #F7DF1E; color: black;}
+.php {width: 65%; background-color: #777BB4;}
+.C-sharp {width: 70%; background-color: #68217A;}
+.sql {width: 79%; background-color: #CC2927;}
+
+.C-sharp-icon {
+    font-size: 30px;
+}
