@@ -9,13 +9,13 @@ html{
 }/* will scrow to location smoothly */
 
 body{
-    background-color: #080808;
+    background-color: #041D37;
     color: #fff;
 }
 
 #header{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 
 }
 
@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #738CA6;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -51,7 +51,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,7 +64,7 @@ nav ul li a:hover::after{
 
 @keyframes headerTxt {
     from {color: white;}
-    to {color: rebeccapurple;}
+    to {color: #021121;}
 }
 
 .header-text{
@@ -81,7 +81,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: #738CA6;
 }
 /* ----------------------about--------------*/
 
@@ -102,11 +102,18 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    float: top;
+    clip-path: circle(40%);
+  shape-outside: circle(45%);
 }
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+.about-col-2 h1 {
+    font-size: 30px;
+    padding: 10px 0px ;
 }
 
 .sub-title {
@@ -132,7 +139,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -149,8 +156,8 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
+    color: #738CA6;
+    font-size: 16px;
 }
 
 .tab-contents {
@@ -174,7 +181,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background: #262626;
+    background: #4A6B8A;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -211,7 +218,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #2A4C6F;
     transform: translateY(-10px);
 
 }
@@ -246,7 +253,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #738CA6);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -269,10 +276,10 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #fff;
     text-decoration: none;
     line-height: 60px;
-    background: #fff;
+    background: #4D6C8C;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -290,7 +297,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #4D6C8C;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -299,7 +306,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background-color: #ff004f;
+    background-color: #738CA6;
 }
 
 /*-----------contact--------------*/
@@ -316,7 +323,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #738CA6;
     margin-right: 15px;
 }
 
@@ -334,24 +341,28 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: #ff004f;
+    color: #738CA6;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #738CA6;
 }
 
 .contact-right form{
     width: 100%;
 }
 
+.contact-right ::placeholder {
+    color: #fff;
+}
+
 form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #738CA6;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -370,7 +381,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background-color: #262626;
+    background-color: #738CA6;
     font-weight: 300;
     margin-top: 20px;
 }
