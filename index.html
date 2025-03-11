@@ -240,7 +240,7 @@
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -252,24 +252,16 @@
     </div>
 
     <script src="index.js"></script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbymsm4r-lP6G5_mJvPG8jxxKcN_6TKnqpYMH2CLr1nVQ4eJrFLcq_gLYD5sK2NClNZrvg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent successfully!!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    <script src="email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ELylMfo2IqOx3UijS",
+            });
+        })();
+    </script>
 </body>
 </html>
