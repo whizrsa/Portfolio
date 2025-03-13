@@ -1,6 +1,5 @@
 function sendEmail()
 {
-
     let params = {
         from_name : document.getElementById("name").value,
         from_email : document.getElementById("email").value,
