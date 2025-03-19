@@ -290,6 +290,7 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
+
 .work:hover img{
     transform: scale(1.1);
 }
@@ -420,7 +421,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #ff004f;
+        background: #041D37;
         position: fixed;
         top: 0;
         right: -300px; /*will make it hidden */
