@@ -316,11 +316,11 @@
                     <a href="images/Elvis Chimuse IT CV.pdf" download class="btn btn2" alt="CV download">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-email">
+                    <form name="submit-email" onsubmit="sendEmail(event)">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2" onclick="sendEmail()">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -331,16 +331,11 @@
         </div>
     </div>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer>
+        <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ELylMfo2IqOx3UijS");
     </script>
-    <script src="main.js" defer></script>    
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "ELylMfo2IqOx3UijS",
-            });
-        })();
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
