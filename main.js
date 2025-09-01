@@ -27,7 +27,7 @@ function sendEmail(event) {
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname, event) {
+function opentab(tabname) {
     for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
@@ -36,7 +36,8 @@ function opentab(tabname, event) {
         tabcontent.classList.remove("active-tab");
     }
 
-    event.currentTarget.classList.add("active-link");
+    // "this" refers to the clicked element
+    event.target.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -50,3 +51,4 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.right = "-200px";
 }
+
