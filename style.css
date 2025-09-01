@@ -576,10 +576,11 @@ nav .fa-solid{
 }
 
 /* Skill Colors */
+.wordpress {width: 80%; background-color: #ababab;}
 .html {width: 90%; background-color: #E34F26;}
 .css {width: 80%; background-color: #1572B6;}
 .js {width: 55%; background-color: #F7DF1E; color: black;}
-.php {width: 80%; background-color: #777BB4;}
+.php {width: 65%; background-color: #777BB4;}
 .C-sharp {width: 70%; background-color: #68217A;}
 .sql {width: 79%; background-color: #CC2927;}
 
